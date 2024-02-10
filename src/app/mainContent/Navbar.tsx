@@ -8,10 +8,10 @@ const Navbar: React.FC = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
 
   const links = [
-    { id: 1, path: "/", name: "home" },
-    { id: 2, path: "/about", name: "about" },
+    { id: 1, path: "/about", name: "about" },
+    { id: 2, path: "/resume", name: "Resume" },
     { id: 3, path: "/portfolio", name: "portfolio" },
-    { id: 4, path: "/experience", name: "experience" },
+    { id: 4, path: "/blog", name: "blog" },
     { id: 5, path: "/contact", name: "contact" },
   ];
 
@@ -23,7 +23,7 @@ const Navbar: React.FC = () => {
       <div className='self-center'>
         <ModeToggle />
       </div>
-      <div className='flex md:w-1/2 justify-between border-2 py-3 px-5 rounded-bl-2xl rounded-tr-lg'>
+      <div className='flex md:w-1/2 justify-between border-2 md:p-5 p-2 rounded-bl-2xl rounded-tr-lg'>
         <ul className="hidden md:flex">
           {links.map(({ id, path, name }) => (
             <li key={id} className="px-4 font-medium text-gray-500 hover:scale-105 hover:text-white duration-200">

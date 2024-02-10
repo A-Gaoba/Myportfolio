@@ -1,6 +1,5 @@
 import Sidebar from "./sidebar/Sidebar";
 import MainContent from "./mainContent/MainContent";
-import { Link } from "lucide-react";
 import Navbar from "./mainContent/Navbar";
 
 

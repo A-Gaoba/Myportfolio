@@ -1,7 +1,4 @@
-
-import ModeToggle from '@/components/ModToggle';
 import React from 'react';
-import Navbar from './Navbar';
 
 const MainContent = () => {
   return (

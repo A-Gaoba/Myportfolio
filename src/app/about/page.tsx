@@ -1,7 +1,12 @@
 import React from 'react'
+import Summary from './Summary'
+import WhatIDo from './WhatDo'
 
 export default function About() {
   return (
-    <h1 className="font-bold text-xl mb-4">About</h1>
+    <div>
+      <Summary />
+      <WhatIDo />
+    </div>
   )
 }

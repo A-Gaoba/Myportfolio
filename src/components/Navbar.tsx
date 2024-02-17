@@ -23,7 +23,7 @@ const Navbar: React.FC = () => {
       <div className='self-center'>
         <ModeToggle />
       </div>
-      <div className='flex md:w-1/2 justify-between border-2 md:p-5 p-2 rounded-bl-2xl rounded-tr-lg'>
+      <div className='flex md:w-1/2 justify-evenly border-2 md:p-5 p-2 rounded-bl-2xl rounded-tr-lg'>
         <ul className="hidden md:flex">
           {links.map(({ id, path, name }) => (
             <li key={id} className="px-4 font-medium text-gray-500 hover:scale-105 hover:text-white duration-200">

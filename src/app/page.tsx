@@ -1,16 +1,11 @@
-import Sidebar from "./sidebar/Sidebar";
-import MainContent from "./mainContent/MainContent";
-import Navbar from "./mainContent/Navbar";
-
+import React from 'react'
 
 export default function Home() {
   return (
-    <div className="flex flex-col md:flex-row min-h-screen md:p-6 2xl:px-28 gap-2">
-      <Sidebar />
-      <div className="border-2 p-2 w-full rounded-xl flex-row">
-        <Navbar />
-        <MainContent />
+    <div className="flex-1 justify-center items-center p-4">
+      <div className='flex justify-between'>
+          <h1 className="font-bold text-xl mb-4">home</h1>
       </div>
     </div>
-  );
+  )
 }

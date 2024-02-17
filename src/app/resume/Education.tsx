@@ -27,7 +27,7 @@ const educationHistory = [
 
 const Education = () => {
   return (
-    <div className="p-8 ">
+<div className="p-8 border-2 rounded-xl">
       <div className="flex items-center dark:text-white mb-6">
         <FaBook className="text-4xl text-orange-500 mr-4" />
         <h2 className="text-3xl font-bold">Education</h2>

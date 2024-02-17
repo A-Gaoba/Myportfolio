@@ -22,7 +22,7 @@ const experienceHistory = [
 
 const Experience = () => {
   return (
-    <div className="p-8">
+    <div className="p-8 border-2 rounded-xl mt-6">
       <div className="flex items-center dark:text-white mb-6">
         <FaBriefcase className="text-4xl text-orange-500 mr-4" />
         <h2 className="text-3xl font-bold">Experience</h2>

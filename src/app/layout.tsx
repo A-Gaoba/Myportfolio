@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 };
 
 import Navbar from "@/components/Navbar";
-import Sidebar from "@/components/Sidebar"
+import Sidebar from "@/components/[sidebar]/Sidebar"
 
 export default function RootLayout({
   children,

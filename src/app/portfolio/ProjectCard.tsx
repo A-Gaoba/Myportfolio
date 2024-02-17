@@ -33,7 +33,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         {title}
       </a>
     </h3>
-    {/* <p className="text-gray-300 mb-4">{description}</p> */}
+    <p className="text-gray-300 mb-4">{description}</p>
     <div className="flex flex-wrap gap-2">
       {technologies.map((tech, index) => (
         <span

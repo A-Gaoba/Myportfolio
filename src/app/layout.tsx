@@ -26,7 +26,7 @@ export default function RootLayout({
         enableSystem
         disableTransitionOnChange
       >
-        <div className="flex flex-col md:flex-row min-h-screen md:p-6 2xl:px-28 gap-2">
+        <div className="flex flex-col md:flex-row min-h-screen p-2 md:p-6 2xl:px-28 gap-2">
           <Sidebar />
           <div className="border-2 p-2 w-full rounded-xl flex-row">
             <Navbar />

@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import React from 'react';
-import { FiMail, FiPhone, FiCalendar, FiMapPin } from 'react-icons/fi'; // Importing icons
+import { FiMail, FiPhone, FiCalendar, FiMapPin } from 'react-icons/fi'; 
 
 import img from "../../../public/photo.png";
 

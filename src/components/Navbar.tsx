@@ -37,7 +37,7 @@ const Navbar: React.FC = () => {
           {isNavOpen ? <FaTimes size={30} className="text-gray-500" /> : <FaBars size={30} className="text-gray-500" />}
         </div>
         {isNavOpen && (
-          <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-black to-gray-800">
+          <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-black to-gray-800 z-50">
             {links.map(({ id, path, name }) => (
               <li key={id} className="py-6 text-4xl">
                 <Link href={path}>

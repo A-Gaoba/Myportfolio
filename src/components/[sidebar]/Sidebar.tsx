@@ -34,18 +34,18 @@ const Sidebar = () => {
 
   return (
     <div className="w-full xl:w-1/3 p-4 border-2 rounded-xl">
-      <button onClick={toggleInformation} className="icon-button">
-        <FiInfo /> {/* Conditional Toggle for Information */}
+      <button type='button' onClick={toggleInformation} className="icon-button lg:hidden mr-4">
+        <FiInfo  size={24} /> {/* Conditional Toggle for Information */}
       </button>
       {showInformation && <Information />}
 
-      <button onClick={toggleLanguage} className="icon-button">
-        <FiBook /> {/* Conditional Toggle for Language */}
+      <button type='button' onClick={toggleLanguage} className="icon-button lg:hidden mr-4">
+        <FiBook size={24}/> {/* Conditional Toggle for Language */}
       </button>
       {showLanguage && <Language />}
 
-      <button onClick={toggleSkills} className="icon-button">
-        <FiStar /> {/* Conditional Toggle for Skills */}
+      <button type='button' onClick={toggleSkills} className="icon-button lg:hidden">
+        <FiStar size={24}/> {/* Conditional Toggle for Skills */}
       </button>
       {showSkills && <Skills />}
     </div>

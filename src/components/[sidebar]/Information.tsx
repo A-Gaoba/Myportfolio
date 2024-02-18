@@ -14,7 +14,7 @@ function Information() {
   ];
 
   return (
-    <section className="flex md:flex-col md:gap-4 md:justify-center justify-evenly items-center">
+    <section className="flex flex-col md:gap-4 md:justify-center justify-evenly items-center">
       <div className='max-w-sm flex flex-col gap-6 bg-white dark:bg-gray-900 p-6 rounded-lg shadow-md'>
         <div className='self-center'>
           <Image src={img} alt="Profile Picture" width={120} height={120} className='rounded-full shadow-lg' objectFit='cover' quality={100} />
@@ -30,7 +30,7 @@ function Information() {
       </div>
 
       <div>
-        <div className='w-full h-[1px] bg-orange-500'></div>
+        <div className='w-full h-[1px] bg-orange-500 mt-4 md:mt-0'></div>
         <div className="p-4">
           <ul className="list-none space-y-2">
             {infos.map(({ label, value, Icon }) => (

@@ -26,7 +26,7 @@ const Navbar: React.FC = () => {
       <div className='flex md:w-1/2 justify-evenly border-2 md:p-5 p-2 rounded-bl-2xl rounded-tr-lg'>
         <ul className="hidden md:flex">
           {links.map(({ id, path, name }) => (
-            <li key={id} className="px-4 font-medium text-gray-500 hover:scale-105 hover:text-white duration-200">
+            <li key={id} className="px-4 font-medium text-gray-500 hover:scale-105 dark:hover:text-white hover:text-black hover:font-bold duration-200">
               <Link href={path}>
                 <span className="capitalize cursor-pointer link-underline">{name}</span>
               </Link>

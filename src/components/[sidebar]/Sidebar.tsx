@@ -11,7 +11,6 @@ const Sidebar = () => {
   const [showInformation, setShowInformation] = useState(true);
   const [showSkills, setShowSkills] = useState(true);
   const [showLanguage, setShowLanguage] = useState(true);
-  // State to manage if it's a medium screen or not
   const [isMediumScreen, setIsMediumScreen] = useState(false);
 
   // Adjust to screen size dynamically

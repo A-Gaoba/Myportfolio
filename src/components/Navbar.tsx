@@ -19,11 +19,11 @@ const Navbar: React.FC = () => {
 
 
   return (
-    <div className='flex w-full justify-between -mt-2 mx-2 z-10'>
-      <div className='self-center'>
+    <div className='flex w-full justify-between -mt-2 z-10 ml-2'>
+      <div className={'self-center ' + (isNavOpen ? "hidden" : "flex")}>
         <ModeToggle />
       </div>
-      <div className='flex md:w-1/2 justify-evenly border-2 md:p-5 p-2 rounded-bl-2xl rounded-tr-lg'>
+      <div className={'flex justify-evenly md:border-2 md:p-5 p-2 rounded-bl-2xl rounded-tr-lg ' + (isNavOpen ? "w-full mr-2" : "w-1/2")}>
         <ul className="hidden md:flex">
           {links.map(({ id, path, name }) => (
             <li key={id} className="px-4 font-medium text-gray-500 hover:scale-105 dark:hover:text-white hover:text-black hover:font-bold duration-200">
@@ -35,10 +35,10 @@ const Navbar: React.FC = () => {
         </ul>
 
         <div className="md:hidden z-10" onClick={toggleNav}>
-          {isNavOpen ? <FaTimes size={30} className="text-gray-500" /> : <FaBars size={30} className="text-gray-500" />}
+          {isNavOpen ? <FaTimes size={40} className="text-gray-500 absolute top-22 right-10 border-2 p-1 " /> : <FaBars size={40} className="text-gray-500 border-2 p-1 ml-20" />}
         </div>
         {isNavOpen && (
-          <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-black to-gray-800 ">
+          <ul className="flex flex-col justify-center items-center static  w-full h-screen">
             {links.map(({ id, path, name }) => (
               <li key={id} className="py-6 text-4xl">
                 <Link href={path}>
@@ -49,8 +49,8 @@ const Navbar: React.FC = () => {
           </ul>
         )}
       </div>
-
     </div>
+
   );
 };
 

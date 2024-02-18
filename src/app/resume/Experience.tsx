@@ -17,7 +17,6 @@ const experienceHistory = [
     year: "2023",
     description: "Engaged in a temporary role at the university, gaining hands-on experience in an academic setting for 2 months.",
   },
-  // ... other experience entries
 ];
 
 const Experience = () => {

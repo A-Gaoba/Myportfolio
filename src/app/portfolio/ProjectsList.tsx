@@ -1,5 +1,5 @@
 import React from 'react';
-import ProjectCard from './ProjectCard';
+import { ProjectCard } from './ProjectCard';
 
 type Project = {
   title: string;
@@ -61,7 +61,7 @@ const projects: Project[] = [
 ];
 
 const ProjectsList: React.FC = () => (
-  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+  <div className="grid grid-cols-1 gap-4 sm:gap-6 md:grid-cols-2 md:gap-8 lg:grid-cols-3 lg:gap-10 xl:gap-12 2xl:grid-cols-4">
     {projects.map((project, index) => (
       <ProjectCard key={index} {...project} />
     ))}

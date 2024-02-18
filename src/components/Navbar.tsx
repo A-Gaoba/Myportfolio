@@ -19,7 +19,7 @@ const Navbar: React.FC = () => {
 
 
   return (
-    <div className='flex w-full justify-between -mt-2 mx-2'>
+    <div className='flex w-full justify-between -mt-2 mx-2 z-10'>
       <div className='self-center'>
         <ModeToggle />
       </div>
@@ -33,11 +33,12 @@ const Navbar: React.FC = () => {
             </li>
           ))}
         </ul>
+
         <div className="md:hidden z-10" onClick={toggleNav}>
           {isNavOpen ? <FaTimes size={30} className="text-gray-500" /> : <FaBars size={30} className="text-gray-500" />}
         </div>
         {isNavOpen && (
-          <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-black to-gray-800 z-50">
+          <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-black to-gray-800 ">
             {links.map(({ id, path, name }) => (
               <li key={id} className="py-6 text-4xl">
                 <Link href={path}>

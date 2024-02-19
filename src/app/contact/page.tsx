@@ -45,7 +45,7 @@ const Contact: React.FC = () => {
   };
 
   return (
-    <div className="flex flex-wrap justify-center items-center lg:h-screen p-4">
+    <div className="flex flex-wrap justify-center items-center lg:h-screen p-4 w-full">
       <div className="w-full ">
         <h1 className="dark:text-white text-4xl font-bold mb-8 hidden lg:block">
           Contact

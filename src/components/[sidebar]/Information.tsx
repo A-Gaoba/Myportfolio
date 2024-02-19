@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import React from 'react';
-import { FiMail, FiPhone, FiCalendar, FiMapPin } from 'react-icons/fi';
+import { FiMail, FiPhone, FiCalendar, FiMapPin } from 'react-icons/fi'; 
 
 import img from "../../../public/photo.png";
 
@@ -17,7 +17,7 @@ function Information() {
     <section className="flex flex-col md:gap-4 md:justify-center justify-evenly items-center">
       <div className='max-w-sm flex flex-col gap-6 bg-white dark:bg-gray-900 p-6 rounded-lg shadow-md'>
         <div className='self-center'>
-          <Image src={img} alt="Profile Picture" loading="lazy" priority width={120} height={120} className='rounded-full shadow-lg' objectFit='cover' quality={100} />
+          <Image src={img} alt="Profile Picture" width={120} height={120} className='rounded-full shadow-lg' objectFit='cover' quality={100} />
         </div>
         <div className="text-center">
           <h1 className='text-xl font-semibold dark:text-gray-100 text-gray-900 mb-4'>Abdulrahman Gaoba</h1>
@@ -35,9 +35,9 @@ function Information() {
           <ul className="list-none space-y-2">
             {infos.map(({ label, value, Icon }) => (
               <li className="flex items-center dark:text-white text-gray-800 space-x-4" key={label}>
-                <Icon className="inline-block" size={24} />
+                <Icon className="inline-block" size={24}/> 
                 <div className="flex-1">
-                  <div className="text-sm font-bold">{label}</div>
+                  <div className="text-sm font-bold">{label}</div> 
                   <div className="text-xs">{value}</div>
                 </div>
               </li>

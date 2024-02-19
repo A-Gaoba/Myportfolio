@@ -1,7 +1,6 @@
 "use client"
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { Image } from 'lucide-react';
 
 const Contact: React.FC = () => {
   const [name, setName] = useState<string>('');
@@ -103,7 +102,7 @@ const Contact: React.FC = () => {
           )}
           <button
             type="submit"
-            className="text-white hover:text-sky-500 rounded-lg py-2"
+            className="dark:text-white hover:text-sky-500 rounded-lg py-2 p-4 border-2"
           >
             Send Message
           </button>

@@ -35,7 +35,7 @@ const Navbar: React.FC = () => {
         </ul>
 
         <div className="md:hidden z-10" onClick={toggleNav}>
-          {isNavOpen ? <FaTimes size={40} className="text-gray-500 absolute top-22 right-10 border-2 p-1 rounded-lg" /> : <FaBars size={40} className="text-gray-500 border-2 p-1 ml-20 rounded-lg" />}
+          {isNavOpen ? <FaTimes size={40} className="text-gray-500 absolute top-22 right-6 border-2 p-1 rounded-lg" /> : <FaBars size={40} className="text-gray-500 border-2 p-1 ml-24 rounded-lg" />}
         </div>
         {isNavOpen && (
           <ul className="flex flex-col justify-center items-center static  w-full h-screen">

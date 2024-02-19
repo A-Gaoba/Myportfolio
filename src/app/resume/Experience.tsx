@@ -8,12 +8,12 @@ const experienceHistory = [
     description: "Worked as a freelancer, taking on various software development projects and delivering high-quality solutions to clients.",
   },
   {
-    company: "Startup Company",
+    company: "Protechies start up company",
     year: "2023",
     description: "Co-founded a startup company with a friend, contributing to the growth and success of our business through innovative approaches and dedicated teamwork.",
   },
   {
-    company: "University",
+    company: "Ufa University of Science and Technology",
     year: "2023",
     description: "Engaged in a temporary role at the university, gaining hands-on experience in an academic setting for 2 months.",
   },
@@ -21,7 +21,7 @@ const experienceHistory = [
 
 const Experience = () => {
   return (
-    <div className="p-8 border-2 rounded-xl mt-6">
+    <div className="md:p-8 p-6 border-2 rounded-xl mt-6">
       <div className="flex items-center dark:text-white mb-6">
         <FaBriefcase className="text-4xl text-orange-500 mr-4" />
         <h2 className="text-3xl font-bold">Experience</h2>
@@ -32,9 +32,9 @@ const Experience = () => {
           <div key={index} className="flex items-center dark:text-white mb-4 pl-10">
             <div>
               <FaCircle className="text-xs text-orange-500 absolute left-5 -ml-[5px] mt-3 opacity-80" />
-              <h3 className="font-bold text-lg">{exp.company}</h3>
-              <p className="text-orange-500">{exp.year}</p>
-              <p>{exp.description}</p>
+              <h3 className="font-bold md:text-lg">{exp.company}</h3>
+              <p className="text-orange-500 text-sm md:text-base">{exp.year}</p>
+              <p className='text-xs md:text-base mt-1'>{exp.description}</p>
             </div>
           </div>
         ))}

@@ -51,10 +51,10 @@ const Contact: React.FC = () => {
           Contact
         </h1>
         <p className="dark:text-white text-md mb-4 text-xs lg:text-base">
-          Got an exciting project in need of help? 
+          Got an exciting project in need of help?
         </p>
         <p className="dark:text-white text-md mb-8 text-xs lg:text-base">
-        Don&apos;t hesitate to get in touch by sending me an email! 
+          Don&apos;t hesitate to get in touch by sending me an email!
         </p>
         <motion.form
           initial={{ opacity: 0, y: -20 }}
@@ -89,7 +89,7 @@ const Contact: React.FC = () => {
               id="message"
               placeholder="Message"
               className="w-full bg-black text-white rounded-lg px-4 py-2"
-              rows={4}
+              rows={6}
               value={message}
               onChange={(e) => setMessage(e.target.value)}
             />

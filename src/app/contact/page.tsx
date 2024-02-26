@@ -58,82 +58,73 @@ const Contact: React.FC = () => {
   }, []);
 
   return (
-    // <div className="flex flex-wrap justify-center items-center lg:h-screen p-4 w-full">
-    //   <div className="w-full ">
-    //     <h1 className="dark:text-white text-4xl font-bold mb-8 hidden lg:block">
-    //       Contact
-    //     </h1>
-    //     <p className="dark:text-white text-md mb-4 text-xs lg:text-base">
-    //       Got an exciting project in need of help?
-    //     </p>
-    //     <p className="dark:text-white text-md mb-8 text-xs lg:text-base">
-    //       Don&apos;t hesitate to get in touch by sending me an email!
-    //     </p>
-    //     <motion.form
-    //       initial={{ opacity: 0, y: -20 }}
-    //       animate={{ opacity: 1, y: 0 }}
-    //       transition={{ delay: 0.6, duration: 0.8 }}
-    //       action="https://formspree.io/f/maygedly"
-    //       method="POST"
-    //       onSubmit={handleSubmit}
-    //     >
-    //       <div className="mb-4">
-    //         <input
-    //           type="text"
-    //           id="name"
-    //           placeholder="Name"
-    //           className="w-full bg-black text-white rounded-lg px-4 py-2"
-    //           value={name}
-    //           onChange={(e) => setName(e.target.value)}
-    //         />
-    //       </div>
-    //       <div className="mb-4">
-    //         <input
-    //           type="email"
-    //           placeholder="Email"
-    //           id="email"
-    //           className="w-full bg-black text-white rounded-lg px-4 py-2"
-    //           value={email}
-    //           onChange={(e) => setEmail(e.target.value)}
-    //         />
-    //       </div>
-    //       <div className="mb-4">
-    //         <textarea
-    //           id="message"
-    //           placeholder="Message"
-    //           className="w-full bg-black text-white rounded-lg px-4 py-2"
-    //           rows={6}
-    //           value={message}
-    //           onChange={(e) => setMessage(e.target.value)}
-    //         />
-    //       </div>
-    //       {submissionStatus === 'success' && (
-    //         <p className="text-green-500 bg-[#00ff0033] p-4 w-72 max-h-[100px]">Message sent successfully!</p>
-    //       )}
-    //       {submissionStatus === 'error' && (
-    //         <p className="text-red-500 bg-[#ff000033] p-4 w-72 max-h-[100px]">An error occurred. Please try again.</p>
-    //       )}
-    //       <button
-    //         type="submit"
-    //         className="dark:text-white hover:text-sky-500 rounded-lg py-2 p-4 border-2"
-    //       >
-    //         Send Message
-    //       </button>
-    //       <br />
+    <div className="flex flex-wrap justify-center items-center lg:h-screen p-4 w-full">
+      <div className="w-full ">
+        <h1 className="dark:text-white text-4xl font-bold mb-8 hidden lg:block">
+          Contact
+        </h1>
+        <p className="dark:text-white text-md mb-4 text-xs lg:text-base">
+          Got an exciting project in need of help?
+        </p>
+        <p className="dark:text-white text-md mb-8 text-xs lg:text-base">
+          Don&apos;t hesitate to get in touch by sending me an email!
+        </p>
+        <motion.form
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.6, duration: 0.8 }}
+          action="https://formspree.io/f/maygedly"
+          method="POST"
+          onSubmit={handleSubmit}
+        >
+          <div className="mb-4">
+            <input
+              type="text"
+              id="name"
+              placeholder="Name"
+              className="w-full bg-black text-white rounded-lg px-4 py-2"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+            />
+          </div>
+          <div className="mb-4">
+            <input
+              type="email"
+              placeholder="Email"
+              id="email"
+              className="w-full bg-black text-white rounded-lg px-4 py-2"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
+          </div>
+          <div className="mb-4">
+            <textarea
+              id="message"
+              placeholder="Message"
+              className="w-full bg-black text-white rounded-lg px-4 py-2"
+              rows={6}
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
+            />
+          </div>
+          {submissionStatus === 'success' && (
+            <p className="text-green-500 bg-[#00ff0033] p-4 w-72 max-h-[100px]">Message sent successfully!</p>
+          )}
+          {submissionStatus === 'error' && (
+            <p className="text-red-500 bg-[#ff000033] p-4 w-72 max-h-[100px]">An error occurred. Please try again.</p>
+          )}
+          <button
+            type="submit"
+            className="dark:text-white hover:text-sky-500 rounded-lg py-2 p-4 border-2"
+          >
+            Send Message
+          </button>
+          <br />
 
-    //     </motion.form>
-    //   </div>
-    // </div>
+        </motion.form>
+      </div>
+    </div>
 
-    <div
-      className="visme_d dark:bg-black"
-      data-title="Untitled Project"
-      data-url="kkj77843-untitled-project?fullPage=true"
-      data-domain="forms"
-      data-full-page="false"
-      data-min-height="100vh"
-      data-form-id="21534"
-    ></div>
   );
 };
 

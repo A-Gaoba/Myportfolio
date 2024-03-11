@@ -112,6 +112,7 @@ const Contact: React.FC = () => {
         </motion.form>
       </div>
     </div>
+  )
 };
 
 export default Contact;

@@ -124,17 +124,6 @@ const Contact: React.FC = () => {
         </motion.form>
       </div>
     </div>
-
-    // <div
-    //   className="visme_d dark:bg-black"
-    //   data-title="Untitled Project"
-    //   data-url="kkj77843-untitled-project?fullPage=true"
-    //   data-domain="forms"
-    //   data-full-page="false"
-    //   data-min-height="100vh"
-    //   data-form-id="21534"
-    // ></div>
-  );
 };
 
 export default Contact;

@@ -45,6 +45,18 @@ const Contact: React.FC = () => {
     }
   };
 
+
+  // useEffect(() => {
+  //   const script = document.createElement('script');
+  //   script.src = 'https://static-bundles.visme.co/forms/vismeforms-embed.js';
+  //   script.async = true;
+  //   document.body.appendChild(script);
+
+  //   return () => {
+  //     document.body.removeChild(script);
+  //   };
+  // }, []);
+
   return (
     <div className="flex flex-wrap justify-center items-center lg:h-screen p-4 w-full">
       <div className="w-full ">
@@ -112,7 +124,6 @@ const Contact: React.FC = () => {
         </motion.form>
       </div>
     </div>
-  )
 };
 
 export default Contact;

@@ -19,11 +19,11 @@ const Navbar: React.FC = () => {
 
 
   return (
-    <div className='flex w-full justify-between -mt-2 z-10 ml-2'>
+    <div className='flex w-full justify-between  -mt-2 z-10 ml-2'>
       <div className={'self-center ' + (isNavOpen ? "hidden" : "flex")}>
         <ModeToggle />
       </div>
-      <div className={'flex justify-evenly md:border-2 md:p-5 p-2 rounded-bl-2xl rounded-tr-lg ' + (isNavOpen ? "w-full mr-2" : "w-1/2")}>
+      <div className={'flex justify-evenly md:border-2 md:p-5 p-2 rounded-bl-2xl rounded-tr-lg ' + (isNavOpen ? "w-full mr-2" : "w-2/3 2xl:w-1/2")}>
         <ul className="hidden md:flex">
           {links.map(({ id, path, name }) => (
             <li key={id} className="px-4 font-medium text-gray-500 hover:scale-105 dark:hover:text-white hover:text-black hover:font-bold duration-200">

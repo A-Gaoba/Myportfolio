@@ -23,28 +23,6 @@ const serviceData = [
     description: "I make high-quality photos of any category at a professional level."
   },
 ];
-// const serviceData = [
-//   {
-//     Icon: FaPaintBrush,
-//     title: "Web Design",
-//     description: "The most modern and high-quality design made at a professional level."
-//   },
-//   {
-//     Icon: FaLaptopCode,
-//     title: "Web Development",
-//     description: "High-quality development of sites at the professional level."
-//   },
-//   {
-//     Icon: FaMobileAlt,
-//     title: "Mobile Apps",
-//     description: "Professional development of applications for iOS and Android."
-//   },
-//   {
-//     Icon: FaCamera,
-//     title: "Photography",
-//     description: "I make high-quality photos of any category at a professional level."
-//   },
-// ];
 
 function WhatIDo() {
   return (

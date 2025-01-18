@@ -75,3 +75,22 @@
   }
   
 }
+
+
+@keyframes shine {
+  0% {
+    left: -100%;
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    left: 100%;
+    opacity: 0;
+  }
+}
+
+.animate-shine {
+  animation: shine 2s infinite;
+}

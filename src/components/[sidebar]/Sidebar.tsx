@@ -1,51 +1,66 @@
-"use client"
+"use client";
 
-import React, { useState, useEffect } from 'react';
-import Information from './Information';
-import Skills from './Skills';
-import Language from './Language';
-import { FiInfo, FiBook, FiStar } from 'react-icons/fi';
+import React, { useState, useEffect } from "react";
+import Information from "./Information";
+import Skills from "./Skills";
+import Language from "./Language";
+import { FiInfo, FiBook, FiStar } from "react-icons/fi";
 
 const Sidebar = () => {
-  // Initial states are always true for rendering without conditions
   const [showInformation, setShowInformation] = useState(true);
   const [showSkills, setShowSkills] = useState(true);
   const [showLanguage, setShowLanguage] = useState(true);
   const [isMediumScreen, setIsMediumScreen] = useState(false);
 
-  // Adjust to screen size dynamically
   useEffect(() => {
     const checkScreenSize = () => {
       setIsMediumScreen(window.innerWidth <= 768);
     };
 
-    // Check screen size initially and on every window resize
     checkScreenSize();
-    window.addEventListener('resize', checkScreenSize);
+    window.addEventListener("resize", checkScreenSize);
 
-    // Cleanup listener on component unmount
-    return () => window.removeEventListener('resize', checkScreenSize);
+    return () => window.removeEventListener("resize", checkScreenSize);
   }, []);
 
-  // Toggle visibility only if on medium screen
-  const toggleInformation = () => isMediumScreen && setShowInformation(!showInformation);
+  const toggleInformation = () =>
+    isMediumScreen && setShowInformation(!showInformation);
   const toggleSkills = () => isMediumScreen && setShowSkills(!showSkills);
   const toggleLanguage = () => isMediumScreen && setShowLanguage(!showLanguage);
 
   return (
-    <div className="w-full xl:w-1/3 p-4 border-2 rounded-xl">
-      <button type='button' onClick={toggleInformation} className="icon-button lg:hidden mr-4" aria-label='informatin about me'>
-        <FiInfo size={24} /> {/* Conditional Toggle for Information */}
+    <div className="w-full xl:w-1/3 p-4 border-2 rounded-xl relative">
+      <p className="text-sm text-gray-500 mb-2 block md:hidden">
+        Tap an icon to show or hide its section.
+      </p>
+
+      <button
+        type="button"
+        onClick={toggleInformation}
+        className="icon-button lg:hidden mr-4"
+        aria-label="Information about me"
+      >
+        <FiInfo size={24} />
       </button>
       {showInformation && <Information />}
 
-      <button type='button' onClick={toggleLanguage} className="icon-button lg:hidden mr-4" aria-label='language that i speak'>
-        <FiBook size={24} /> {/* Conditional Toggle for Language */}
+      <button
+        type="button"
+        onClick={toggleLanguage}
+        className="icon-button lg:hidden mr-4"
+        aria-label="Languages I speak"
+      >
+        <FiBook size={24} />
       </button>
       {showLanguage && <Language />}
 
-      <button type='button' onClick={toggleSkills} className="icon-button lg:hidden" aria-label='my skills'>
-        <FiStar size={24} /> {/* Conditional Toggle for Skills */}
+      <button
+        type="button"
+        onClick={toggleSkills}
+        className="icon-button lg:hidden"
+        aria-label="My skills"
+      >
+        <FiStar size={24} />
       </button>
       {showSkills && <Skills />}
     </div>

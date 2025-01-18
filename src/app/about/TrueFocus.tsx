@@ -85,7 +85,8 @@ const TrueFocus: React.FC<TrueFocusProps> = ({
               "--border-color": borderColor,
               "--glow-color": glowColor,
               transition: `filter ${animationDuration}s ease`,
-            }}
+            } as React.CSSProperties}
+
             onMouseEnter={() => handleMouseEnter(index)}
             onMouseLeave={handleMouseLeave}
           >
@@ -109,7 +110,8 @@ const TrueFocus: React.FC<TrueFocusProps> = ({
         style={{
           "--border-color": borderColor,
           "--glow-color": glowColor,
-        }}
+        } as React.CSSProperties}
+
       >
         <span
           className="absolute w-6 h-6 border-[4px] rounded-[4px] top-[-12px] left-[-12px] border-r-0 border-b-0"

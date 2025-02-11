@@ -21,7 +21,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
   return (
     <div className="h-[20rem] w-full flex items-center justify-center">
       <PinContainer title={title} href={link}>
-        <div className="flex basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-[15rem] h-[15rem]">
+        <div className="flex basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-[15rem] h-[18rem]">
           <Image src={imageUrl} alt={title} width={400} height={240} className="rounded-lg mb-4" />
           <h3 className="!pb-2 !m-0 font-bold text-sm dark:text-slate-100 text-slate-800">
             {title}

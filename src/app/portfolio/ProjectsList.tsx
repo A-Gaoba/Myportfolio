@@ -11,6 +11,22 @@ type Project = {
 
 const projects: Project[] = [
   {
+    title: "Junzi Tech Solutions",
+    description:
+      "Junzi Tech Solutions specializes in launching mobile and web applications in just 4 weeks, providing robust, functional, and market-ready solutions.",
+    technologies: ["React", "Tailwind CSS", "Node.js"],
+    imageUrl: "/projectsImages/junzi.png",
+    link: "https://www.junzitechsolutions.com/landing",
+  },
+  {
+    title: "Yemeni Cultural Attaché - Moscow",
+    description:
+      "The official website of the Yemeni Cultural Attaché in Moscow provides cultural and educational services for Yemeni students and visitors in Russia.",
+    technologies: ["React", "Express", "MongoDB", "Tailwind"],
+    imageUrl: "/projectsImages/yemen.png",
+    link: "https://yemculru.com/",
+  },
+  {
     title: "Sharaf Almahaqeri",
     description:
       "Sharaf Almahaqeri's portfolio website showcases his skills, achievements, and information",

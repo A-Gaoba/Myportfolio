@@ -26,22 +26,24 @@ const serviceData = [
 
 function WhatIDo() {
   return (
-    <div className="max-w-4xl mx-auto p-5 border-2 rounded-2xl shadow-lg mt-6">
-      <h2 className="text-2xl font-bold text-start dark:text-white mb-6">What I&lsquo;m Doing</h2>
-      <div className="grid md:grid-cols-2 gap-8">
-        {serviceData.map(({ Icon, title, description }, index) => (
-          <div key={index} className="flex items-start gap-4 border-2 md:p-6 p-4 rounded-xl">
-            <div className="text-xl md:text-6xl text-orange-400 md:p-2 flex-shrink-0">
-              <Icon />
+    <section>
+      <div className="max-w-4xl mx-auto p-5 border-2 rounded-2xl shadow-lg mt-6">
+        <h2 className="text-2xl font-bold text-start dark:text-white mb-6">What I&lsquo;m Doing</h2>
+        <div className="grid md:grid-cols-2 gap-8">
+          {serviceData.map(({ Icon, title, description }, index) => (
+            <div key={index} className="flex items-start gap-4 border-2 md:p-6 p-4 rounded-xl">
+              <div className="text-xl md:text-6xl text-orange-400 md:p-2 flex-shrink-0">
+                <Icon />
+              </div>
+              <div>
+                <h3 className="md:text-xl font-semibold dark:text-white">{title}</h3>
+                <p className="dark:text-gray-300 mt-2 text-sm md:text-base">{description}</p>
+              </div>
             </div>
-            <div>
-              <h3 className="md:text-xl font-semibold dark:text-white">{title}</h3>
-              <p className="dark:text-gray-300 mt-2 text-sm md:text-base">{description}</p>
-            </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
-    </div>
+    </section>
   );
 }
 
